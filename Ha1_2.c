@@ -17,5 +17,24 @@ int main (){
     printf("%.1f \n", sum/5);
 
 
+    int num;
+    int percent;
+    float answer;
+
+    printf("Give me a natural number: ");
+    scanf("%d", &num);
+    printf("Now give me a percentage from 0 to 100%: ");
+    scanf("%d", &percent);
+    printf("%");
+
+    if(percent >= 0 && percent <= 100){
+        answer = (float) ((num/100)*percent);
+        printf("%d%% of %d equals %.1f\n", num, percent, answer);
+
+    } else{
+        printf("You dunce! Can you read?!");
+    }
+
+
+
     return 0;
-}
